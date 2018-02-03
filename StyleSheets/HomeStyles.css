@@ -1,0 +1,237 @@
+.body
+{
+	height: 100%;
+  background: #eee;}
+}
+.content 
+{
+	padding: 16px;
+}
+.sticky 
+{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.sticky + .content 
+{
+	padding-top: 102px;
+}
+.navbarclass 
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	max-height: auto;
+	overflow: hidden;
+	background-color: #C3BAB9;
+}
+.navbarlist 
+{
+	float: right;
+	height: 100px;
+	padding: 30px;
+}
+.navbarlink 
+{
+	text-decoration: none;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+}
+.navbarlink:hover
+{
+	text-decoration: none;
+}
+.footer
+{
+	background-color: #706A6A;
+	text-align: center;
+	color: white;
+	padding: 10px;
+}
+.footerclass 
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #706A6A;
+}
+.footerlist 
+{
+	float: left;
+}
+.footerlink 
+{
+	text-decoration: none;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+}
+.footerlink:hover
+{
+	text-decoration: none;
+	color: white;
+}
+.dots
+{
+	width: auto;
+	height: auto;
+	display: inline-block;
+	background: gray;
+	padding: 5px;
+	border-radius: 50%;
+}
+.dots:hover
+{
+	background: black;
+}
+.box
+{
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 15px 15px 10px grey;
+}
+.mobilenavbardisplaymenu, .mobilenavbarlist
+{
+  display: none;
+}
+.mobilemydetailsdisplay
+{
+  display: none;
+}
+@media only screen and (max-width:1024px)
+{
+	/* For tablets: */
+	.content, .footer 
+	{
+    width:100%;
+  }
+  .navbarclass
+  {
+  	width: 100%;
+  	height: auto;
+  	position: relative;
+    text-align: center;
+  }
+  .logoimage
+  {
+    width: 20%;
+    padding-top: 5px;
+  }
+  .navbarlist
+  {
+  	float: right;
+  	height: 10px;
+  	text-align: center;
+  	padding-top: 10px;
+    width: 20%;
+  }
+  .navbarclass .navbarlist .navbarlink
+  {
+  	text-align: center;
+  	float: right;
+  	padding: 0px 5px;
+  }
+  #resumesidenav
+  {
+    display: none; 
+  }
+}
+@media only screen and (max-width:500px)
+{
+	/* For mobile phones: */
+	.content
+  {
+  	border-top: none;
+  }
+  .content, .footer 
+  {
+    width:100%;  			
+  }
+  .logoimage
+  {
+    width: 60%;
+  }
+  .navbarclass
+  {
+  	width: 100%;
+  	height: auto;
+  	position: relative;
+  }
+  .navbarlist
+  {
+  	float: none;
+  	height: 15px;
+  	text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .navbarclass .navbarlist .navbarlink
+  {
+  	text-align: center;
+  	float: none;
+  	padding: 0;
+  }
+  .mobilenavbardisplaymenu
+  {
+    display: block;
+    float: none;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .mobilenavbarlist
+  {
+    float: none;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .mobilenavbarlink
+  {
+    text-decoration: none;
+    color: black;
+    background: transparent;
+    text-align: center;
+    display: block;
+  }
+  .mobilenavbarlink:hover
+  {
+    text-decoration: none;
+    color: black;
+  }
+  .box
+  {
+    display: none;
+  }
+  .mobilemydetailsdisplay
+  {
+    display: block;
+    width: 95%;
+    padding-left: 5%;
+    font-family: sans-serif;
+    text-align: justify;
+  }
+  #mobilecareerobjective, #mobiletechnicalSkills, #mobileeducation, #mobileprofessionalexperience, #mobileprojects
+  {
+    display: none;
+  }  
+  .mobilecareerobjectiveheader, .mobiletechnicalSkillsheader, .mobileeducationheader, .mobileprofessionalexperienceheader, .mobileprojectsheader
+  {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .mobilecareerobjectiveheader:hover, .mobiletechnicalSkillsheader:hover, .mobileeducationheader:hover, .mobileprofessionalexperienceheader:hover, .mobileprojectsheader:hover
+  {
+    text-decoration: none;
+  }
+}
